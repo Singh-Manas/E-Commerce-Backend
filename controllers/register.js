@@ -1,4 +1,5 @@
 const User = require('../models/user');
+// const User = require('../models/mongo');    // For connecting to MongoDB
 // bcrypt is used for password hashing 
 const bcrypt = require('bcrypt');
 /** Check if Email already exists
