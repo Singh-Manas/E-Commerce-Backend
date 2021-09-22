@@ -13,7 +13,7 @@ const pool = new Pool({
 
 /* GET users listing. */
 router.get('/', function(req, res, next) {
-  pool.query("SELECT * FROM 'COMPANY'", (err, result) => {
+  pool.query("SELECT * FROM COMPANY", (err, result) => {
     if(err) {
         throw err;
     }

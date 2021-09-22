@@ -1,13 +1,14 @@
 const { Sequelize} = require('sequelize');
+const { sequelize_database, sequelize_username, sequelize_password, sequelize_host, sequelize_dialect } = require('../config');
 
 // Sequelize is an ORM (Object Relational Mapping) tool used for Database connectivity. 
 const sequelize = new Sequelize (
-    "postgres", 
-    "postgres",
-    "12345",
+    sequelize_database, 
+    sequelize_username,
+    sequelize_password,
     {
-        host: "localhost",
-        dialect: "postgres"
+        host: sequelize_host,
+        dialect: sequelize_dialect
     }
 );
 
